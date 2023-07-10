@@ -21,7 +21,7 @@ class InferlessPythonModel:
     def infer(self, inputs):
         pipeline_output = self.generator(
             inputs['prompt'],
-            max_length=150,
+            max_length=100,
             do_sample=True,
             top_k=10,
             num_return_sequences=1,
